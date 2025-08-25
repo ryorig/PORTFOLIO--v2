@@ -55,7 +55,7 @@ nav {
   object-fit: contain;
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
-  align: center;
+  position: adsolute;
 }
 
 .profile-section {
