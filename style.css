@@ -40,15 +40,9 @@ nav {
 .centered {
   min-height: 60vh; display: flex; justify-content: center; align-items: center;
 }
-.circle-animation-wrapper {
-  position: relative;
-  width: 190px;  /* 画像サイズに近い値 */
-  height: 190px;
-  margin: 0 auto;
-}
 .about-img {
-  width: 190px;
-  height: 190px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
   border-radius: 50%;
   display: block;
