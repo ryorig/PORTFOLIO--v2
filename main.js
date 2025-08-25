@@ -1,12 +1,12 @@
-// 画像回転
 const img = document.getElementById("rotatingImage");
 let angle = 0;
 if (img) {
   setInterval(() => {
     angle = (angle + 1) % 360;
-    img.style.transform = `rotate(${angle}deg)`;
+    img.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
   }, 30);
 }
+
 
 // ハンバーガーメニュー
 const navToggle = document.querySelector('.nav-toggle');
