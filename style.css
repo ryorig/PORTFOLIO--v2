@@ -39,13 +39,52 @@ nav {
 
 .centered {
   min-height: 60vh; display: flex; justify-content: center; align-items: center;
-}
-.circle-animation-wrapper {
+}.circle-animation-wrapper {
   position: relative;
   width: 300px;
   height: 300px;
   margin: 0 auto;
 }
+
+.ryosuke-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.profile-section {
+  display: flex;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.03);
+  align-items: center;
+}
+
+.profile-img-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--sub-bg);
+  border: none; /* 枠を消す */
+}
+
 
 .about-img {
   width: 300px;
@@ -70,12 +109,6 @@ nav {
 }
 
 
-.profile-section {
-  display: flex; gap: 2rem; max-width: 800px; margin: 2rem auto; padding: 1rem 2rem 2rem 2rem; background: var(--card-bg); border-radius: 12px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.03);
-  align-items: center;
-}
-.profile-img-container { flex: 1; display: flex; align-items: center; }
 .profile-img {
   width: 140px; height: 140px; object-fit: cover; border-radius: 50%; background: var(--sub-bg); border:none;
 }
