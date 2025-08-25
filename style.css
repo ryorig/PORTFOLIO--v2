@@ -40,17 +40,25 @@ nav {
 .centered {
   min-height: 60vh; display: flex; justify-content: center; align-items: center;
 }
+.circle-animation-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 .about-img {
   width: 300px;
   height: 300px;
-  object-fit: contain;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+  object-fit: contain;
   position: absolute;
-  top: 0; left: 0;
-  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
 }
+
 .circle-text {
   position: absolute;
   width: 190px;
