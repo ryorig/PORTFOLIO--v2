@@ -117,3 +117,61 @@ nav {
   .circle-text { width: 180px; height: 180px;}
   .about-section { min-height: 180px;}
 }
+
+    .timeline-section {
+      background: #1793d1;
+      color: #fff;
+      border-radius: 0 !important;
+      padding: 35px 0 0 0;
+      margin-bottom: 0;
+      position: relative;
+      overflow-x: auto;
+      box-shadow: none;
+    }
+    .timeline-container {
+      max-width: 700px;
+      margin: 0 auto; padding: 0 10px; position: relative;
+    }
+    .timeline-title {
+      color: #fff; text-align: center; margin-bottom: 32px;
+      font-size: 2rem; letter-spacing:1px; font-weight:700;
+    }
+    .timeline {
+      position: relative; width:100%; margin-top:15px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute; left: 120px; top: 0;
+      width: 8px; height: 100%;
+      background: #fff;
+      border-radius: 6px;
+      z-index: 1;
+    }
+    .timeline-item {
+      display: flex; align-items: flex-start; margin-bottom: 48px; min-height: 48px; position: relative;
+    }
+    .timeline-date {
+      width: 110px; text-align: right; font-size: 1.18rem; font-family: inherit; letter-spacing: 1px;
+      line-height: 1.5; font-weight: bold; flex-shrink: 0;
+    }
+    .timeline-dot {
+      width: 38px; min-width: 38px; height: 38px; background: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      position: relative; z-index: 2; margin: 0 18px; border: none;
+    }
+    .timeline-dot.current {
+      width: 46px; height: 62px; border-radius: 23px; margin: 0 14px; background: #fff;
+    }
+    .timeline-date.current { font-size: 1.45rem; color:#fff; font-weight:800; letter-spacing:1px;}
+    .timeline-content { font-size: 1.12rem; line-height: 1.7; white-space: pre-line; margin-top: 2px; font-weight: 400;}
+    .timeline-item:last-child .timeline-content { font-weight:500; font-size:1.12rem;}
+    @media (max-width: 600px) {
+      .timeline-section {padding:10px 0 0 0; border-radius:0;}
+      .timeline-container {padding:5px;}
+      .timeline-title {font-size:1.12rem;}
+      .timeline-date {width:55px; font-size:0.98rem;}
+      .timeline-dot {width:22px;height:22px;min-width:22px;margin:0 8px;}
+      .timeline-dot.current {width:28px;height:43px;}
+      .timeline-content {font-size:0.89rem;}
+      .timeline::before {left: 72px; width:4px;}
+    }
