@@ -41,18 +41,32 @@ nav {
   min-height: 60vh; display: flex; justify-content: center; align-items: center;
 }
 .circle-animation-wrapper {
-  position: relative; width: 260px; height: 260px; margin: 0 auto;
+  position: relative;
+  width: 190px;  /* 画像サイズに近い値 */
+  height: 190px;
+  margin: 0 auto;
 }
 .about-img {
-  width: 190px; height: 190px; object-fit: contain; border-radius: 50%; display: block; margin: 0 auto; background: var(--sub-bg);
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0; left: 0;
   z-index: 2;
 }
 .circle-text {
-  position: absolute; width: 260px; height: 260px; left: 0; top: 0;
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 0;
+  top: 0;
   pointer-events: none;
   z-index: 3;
 }
+
 
 .profile-section {
   display: flex; gap: 2rem; max-width: 800px; margin: 2rem auto; padding: 1rem 2rem 2rem 2rem; background: var(--card-bg); border-radius: 12px;
